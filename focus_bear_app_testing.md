@@ -1,41 +1,69 @@
-Focus Bear App – First Time User Testing Report
-1. Overview
-This document contains my first-time user experience while installing and using the Focus Bear app.
-I tested the app as a brand-new user to identify confusing areas and onboarding improvements.
+# Focus Bear App – Manual Testing (Android)
 
-2. Issues Found 
-Issue 1 – Onboarding feels unclear
-The app starts without explaining what a “Focus Session” is.
-A new user may not understand the purpose or how to start correctly.
+**App Name:** Focus Bear: AuDHD routines  
+**Platform:** Android  
+**App Version:** 1.14.0  
+**Test Device:** Realme Narzo 50 Pro (RMX3395)  
+**Android Version:** Android 14  
+**Testing Type:** Manual Testing  
 
-Impact: Confusing first experience for new users.
-Suggestion: Add a short intro tutorial.
+---
 
-Issue 2 – Routine setup lacks explanation
-When creating a routine, the app directly shows settings without describing why routines matter.
+## Overview
 
-Impact: User may skip the feature due to lack of clarity.
-Suggestion: Add one info screen: “Why routines help”.
+This document covers manual testing feedback focused on onboarding and general usability of the Focus Bear Android application. Testing was performed on the latest Android version to identify areas that could be improved for new users.
 
-Issue 3 – Some instructions feel long or technical
-Certain text descriptions are lengthy and may overwhelm new users.
+---
 
-Impact: Users may skip reading and miss important info.
-Suggestion: Shorten instructions using simple language.
+## Screenshots – Onboarding & Usability Issues
 
-3. Improvement Ideas (Required: 2)
-Idea 1 — Add a 3-step onboarding tutorial
-The app could show a small walkthrough:
+### Screenshot 1: Initial Onboarding Screen
+![Initial Onboarding Screen](screenshots/onboarding_screen.jpeg)
 
-What is a Focus Session
+**Observation:**  
+The onboarding screen introduces the app but does not clearly explain what the user should do first or what the immediate next step is.
 
-How to use Routines
+**Impact:**  
+New users may feel unsure about how to begin using the app effectively.
 
-How the app improves productivity
+---
 
-This will immediately increase user clarity.
+### Screenshot 2: Habit Creation Screen
+![Habit Creation Screen](screenshots/habit_creation.jpeg)
 
-5. Conclusion
-The Focus Bear app works well, but the onboarding and clarity for first-time users can be improved.
-The above issues and suggestions aim to enhance new-user experience.
+**Observation:**  
+The habit creation screen does not provide examples or short guidance text for first-time users.
 
+**Impact:**  
+Users may be confused about how to correctly set up their first habit.
+
+---
+
+### Screenshot 3: Permissions Request Screen
+![Permissions Screen](screenshots/permissions.jpeg)
+
+**Observation:**  
+Permissions are requested without a brief explanation of why they are required.
+
+**Impact:**  
+Users may deny permissions, which can affect reminders and core app functionality.
+
+---
+
+## Improvement Suggestion 1: Clearer Onboarding Instructions
+
+**Description:**  
+Adding short explanatory text or prompts during onboarding could help users understand the app’s purpose and how to get started.
+
+**Benefit:**  
+Reduces confusion and helps new users quickly understand the app flow.
+
+---
+
+## Improvement Suggestion 2: Guided First-Time Walkthrough
+
+**Description:**  
+A short guided walkthrough for first-time users explaining key actions such as creating a habit, setting reminders, and starting a focus session would improve usability.
+
+**Benefit:**  
+Helps users understand core features faster and improves early engagement.
