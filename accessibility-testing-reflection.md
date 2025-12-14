@@ -1,55 +1,81 @@
-How to Test Accessibility
+# Accessibility Testing – Focus Bear App (Android)
 
-Overview  
-This task is about learning how to check if Focus Bear is accessible for users with different disabilities. Since many users have ADHD, Autism, or visual/motor challenges, it’s important that the app is easy to navigate for everyone.
+**App Name:** Focus Bear: AuDHD routines  
+**Platform:** Android  
+**App Version:** 1.14.0  
+**Device Tested:** Realme Narzo 50 Pro (RMX3395)  
+**Android Version:** Android 14  
+**Testing Type:** Manual Accessibility Testing  
 
-Research & Learn
+---
 
-What is WCAG (Web Content Accessibility Guidelines), and what are its key principles?  
-From what I learned, WCAG provides rules that help apps and websites be accessible.  
-The main principles are:  
-- Perceivable (users can see or hear the content)  
-- Operable (users can navigate and use it)  
-- Understandable (content is clear and easy to follow)  
-- Robust (works well with assistive tools like screen readers)
+## Overview
 
-How do screen readers (e.g., NVDA, VoiceOver, TalkBack) work, and how can QA test with them?  
-Screen readers read aloud what is on the screen and help users navigate with gestures or keyboard shortcuts.  
-To test with them, I would turn on VoiceOver or TalkBack, try moving through the app, and listen to whether buttons, labels, and actions are announced correctly.
+This document provides evidence of accessibility testing performed directly on the Focus Bear Android app. The testing focused on screen reader support, basic navigation, and accessibility-related usability for users with assistive needs.
 
-What are some common accessibility issues in apps and websites?  
-Common issues include:  
-- missing alt text or labels  
-- low color contrast  
-- buttons that are too small  
-- poor keyboard navigation  
-- elements not announced properly by screen readers  
-- animations that are too fast or distracting  
+---
 
-How can you test keyboard navigation and focus management?  
-I use only the keyboard (Tab, Shift+Tab, Enter, Space) and check if I can move through the app without a mouse.  
-I also check if the focus highlight is visible and if it moves in a logical order.
+## Accessibility Testing 
 
-What tools can help automate basic accessibility checks?  
-Some helpful tools include:  
-- Lighthouse  
-- Axe DevTools  
-- WAVE  
-These tools can quickly find basic accessibility problems like color contrast or missing labels.
+### Test 1: Screen Reader (TalkBack) Navigation
 
-Reflection
+![TalkBack Enabled](screenshots/talkback_enabled.jpeg)
 
-How would you test if Focus Bear is usable with a screen reader?  
-I would turn on a screen reader and try to complete normal tasks like starting a focus session or creating a routine.  
-I would listen to how buttons and text are read, check if navigation is smooth, and make sure nothing is skipped or confusing.
+**Steps Performed:**
+- Enabled TalkBack from Android Accessibility settings
+- Opened the Focus Bear app
+- Navigated through onboarding screens and main habit screens using swipe gestures
 
-What accessibility barriers could affect someone with ADHD or Autism using the app?  
-Fast animations, cluttered layouts, unclear instructions, or too many steps can be overwhelming.  
-Difficulty focusing or understanding the flow may also be an issue.  
-I would check if the app feels simple, predictable, and calm to use.
+**Observation:**
+- Most buttons and interactive elements were announced correctly
+- Screen reader focus moved logically between elements
 
-If a developer says "this doesn't impact most users", how would you advocate for fixing an accessibility issue?  
-I would explain that accessibility issues still impact real users and that even a small barrier can make the app unusable for someone.  
-I would remind them that accessibility improves the experience for everyone, not just people with disabilities.  
-I would keep the conversation respectful and focused on user experience.
+**Issue Found (Minor):**
+- Some descriptive labels could be more explicit (e.g., generic button names)
 
+---
+
+### Test 2: Focus Navigation & Touch Targets
+
+![Touch Target Navigation](screenshots/touch_navigation.jpeg)
+
+**Steps Performed:**
+- Navigated the app using TalkBack gestures only
+- Tested habit creation and navigation without relying on visual cues
+
+**Observation:**
+- Primary actions were reachable using accessibility navigation
+- Touch targets were generally large enough for accessibility use
+
+**Result:**
+- No major navigation blockers found
+
+---
+
+### Test 3: Text Size & Contrast Check
+
+![Text Size Accessibility](screenshots/text_size.jpeg)
+
+**Steps Performed:**
+- Increased system font size from Android accessibility settings
+- Reopened the Focus Bear app and navigated key screens
+
+**Observation:**
+- Text scaled correctly without overlapping UI elements
+- Content remained readable at larger text sizes
+
+**Result:**
+- No major text or contrast accessibility barriers observed
+
+## Accessibility Findings Summary
+
+- Screen reader support is mostly functional
+- App is usable with TalkBack enabled
+- No critical accessibility blockers were found during testing
+- Minor improvements could be made to descriptive labels for better clarity
+
+---
+
+## Conclusion
+
+Accessibility testing was performed directly on the Focus Bear Android app using TalkBack and system accessibility settings. The app is generally accessible for screen reader users, with no major barriers identified. Minor enhancements could further improve clarity and usability for users relying on assistive technologies.
