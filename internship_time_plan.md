@@ -1,22 +1,48 @@
-📅 Internship Time Plan – Badal Moreya
-This document outlines my weekly schedule and availability.
-Since I already have 4 months of onsite QA experience at DesignWay and 2 months of experience at Focus Bear, I am familiar with most tasks and workflows.
-Because of this background, I can complete the remaining onboarding tasks efficiently (within 2 days) and start contributing to further work immediately — while continuing to learn and develop my skills.
+# Internship Time Plan – Badal Moreya
 
-🧑‍💻 Experience Summary (Why I Can Complete Tasks Faster)
-Completed 4-month onsite internship at DesignWay (Web & App Testing).
+## Overview
+This document outlines my current weekly work schedule for the Focus Bear onboarding internship and confirms that I have started using the Focus Bear app to track my work and tasks.
 
-Completed 2 months as a QA intern at Focus Bear, already familiar with:
+---
 
-QA processes
+## Planned Weekly Work Schedule
 
-Issue reporting
+I plan to work on onboarding and QA-related tasks during the following days and times:
 
-Agile workflows
+- **Monday:** 10:00 AM – 12:00 PM  
+- **Tuesday:** 10:00 AM – 12:00 PM  
+- **Wednesday:** 10:00 AM – 12:00 PM  
+- **Thursday:** 10:00 AM – 12:00 PM  
+- **Friday:** 10:00 AM – 12:00 PM  
 
-Documentation
+**Total Planned Time:** Approximately 10 hours per week
 
-Testing tools
+This schedule allows consistent progress on onboarding tasks while maintaining focus and quality.
 
-Because of my previous experience, I can finish the onboarding tasks quickly and begin real QA work side-by-side with skill development.
+---
 
+## Time Tracking in Focus Bear
+
+I have started logging my daily work and tasks using the Focus Bear app. The screenshots included below show active usage of the app, including task tracking and the overview screen during my onboarding work.
+
+---
+
+## Time Tracking Evidence
+
+### Focus Bear – Tasks View
+![Task Tracking Screenshot](screenshots/time_tracking_tasks.jpeg)
+
+**Details:**
+- Screenshot taken from the Tasks tab in Focus Bear  
+- Shows an active task scheduled for today  
+- Confirms ongoing task tracking using the app  
+
+---
+
+### Focus Bear – Overview Screen
+![Overview Screenshot](screenshots/time_tracking_overview.jpeg)
+
+**Details:**
+- Screenshot taken from the Overview screen  
+- Confirms logged-in user and active Focus Bear usage  
+- Shows routines, tasks, and focus context during onboarding work  
