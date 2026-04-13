@@ -1,53 +1,41 @@
-Bug Advocacy – Reporting Bugs Effectively
+🎓 QA Learning — Bug Advocacy: Reporting Bugs Effectively
+Date: 13 April 2026
+Tester: Badal Moreya
+Resource: James Bach & Michael Bolton — Bug Advocacy talks + Focus Bear QA SOP Section 4.7
+SOP Link: https://docs.google.com/document/d/1XRfau1UPmmLQWBQdo1GeKyxRwT8DLF6tO8Z6pQr-3s4/edit
 
-Overview  
-This task is about learning how to report bugs in a way that helps developers take action quickly. Good bug reporting is an important skill because how I communicate the issue can affect whether it gets fixed.
+📚 What I Learned
+What makes a good bug report vs a bad one?
+A good bug report is clear, specific, and gives the developer everything they need to reproduce the issue without asking follow-up questions. A bad bug report is vague, missing steps, or unclear about what actually went wrong.
+What details must be included?
 
-Research & Learn
+Title — specific, includes feature, platform, and build
+Steps to reproduce — numbered, precise, starting from app launch
+Expected result — what should happen
+Actual result — what actually happened
+Device info — device name, OS version, build number
+Evidence — screenshot or screen recording embedded (must pass QA evidence checker)
+Severity and RICE score — helps developers prioritise
 
-Watch James Bach and Michael Bolton’s talks on Bug Advocacy and how testers can convince developers to fix issues.  
-(Yes, I will go through it.)
+How to make a bug easier to reproduce?
+Write steps in the exact order followed. If the bug is inconsistent, mention the reproduction rate (e.g. 3/3). Include logs or screen recordings where possible.
+Severity vs Priority:
 
-Read blog posts by James Bach on how to write effective bug reports.  
-I read a few articles to understand what details actually matter.
+Severity = how serious the bug is technically
+Priority = how urgently it needs to be fixed
+Example: a UI glitch may be low severity but high priority if it affects brand perception. A backend error may be high severity but scheduled for next sprint
 
-What makes a good bug report vs. a bad one?  
-A good bug report is clear, easy to understand, and gives enough information for the developer to reproduce the issue.  
-A bad bug report is vague, missing steps, or unclear about the actual problem.
 
-What details should be included to make a bug report clear and actionable?  
-Based on what I’ve learned, I should include:  
-- steps to reproduce  
-- expected result  
-- actual result  
-- screenshots or videos  
-- device/browser details  
-- severity or impact  
-This makes it simple for developers to see what went wrong.
+🔁 Reflection
+UI glitch vs critical login failure — how I'd report them differently:
 
-How can a tester make a bug easier to reproduce for developers?  
-I try to write the steps clearly and in the exact order I followed.  
-If the bug is inconsistent, I mention how often it happens.  
-I also include logs or screen recordings when possible.
+UI glitch → screenshot + short description + Low severity
+Login failure → detailed steps + error logs + screen recording + High severity + High priority — blocks all users
 
-What is "bug severity" vs. "bug priority", and how do they impact whether a bug gets fixed?  
-Severity is how serious the bug is.  
-Priority is how soon it needs to be fixed.  
-A bug can be high severity but low priority, or low severity but high priority depending on the situation.
+If a developer dismisses a bug as not important:
+I would explain the user impact clearly — show how it affects the experience, causes confusion, or blocks a flow. I frame it in terms of real user harm rather than technical detail alone.
+How screenshots, logs, and recordings improve reports:
+They remove guesswork. A screenshot shows exactly what I saw. A recording shows the full flow. Logs identify the root cause. These save time for both tester and developer.
 
-Reflection
-
-How would you report a UI glitch vs. a critical login failure differently?  
-For a UI glitch, I would keep it simple with screenshots and a short explanation because it’s mostly visual.  
-For a login failure, I would add detailed steps, logs, error messages, and mark it as high severity and high priority because it blocks all users.
-
-If a developer dismisses a bug as "not important," how would you advocate for fixing it?  
-I would explain the impact on the user and give examples of how it might cause confusion or harm the user experience.  
-Sometimes developers don't see the user’s perspective, so I try to highlight the real impact.
-
-How can screenshots, logs, and screen recordings improve your bug reports?  
-They help developers understand the issue faster without guessing.  
-A screenshot or recording shows exactly what I saw.  
-Logs can help identify the source of the problem.  
-These save time for both sides.
-
+✅ Applied Today
+Filed bug #4353 — Custom Habit Not Saved After Importing Habits During Onboarding [Android · Build 1.18.0 · 1003937]. Followed SOP Section 4.7 exactly — specific title, numbered steps, expected vs actual, device info, RICE score (15 — High Priority), embedded evidence. Ran through AI Prompt 2 before submitting.
